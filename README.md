@@ -25,10 +25,10 @@ md2pdf is a Python package with no Python dependencies. It calls `pandoc` and `t
 
 ```
 brew install pandoc typst
-uv tool install git+https://github.com/openwhale-labs/md2pdf
+uv tool install md2pdf-cjk
 ```
 
-`pipx install git+https://github.com/openwhale-labs/md2pdf` works the same way. pandoc 3.1.3 or newer is required for the Typst engine.
+`pipx install md2pdf-cjk` works the same way; the package is [md2pdf-cjk on PyPI](https://pypi.org/project/md2pdf-cjk/) and the command is `md2pdf`. pandoc 3.1.3 or newer is required for the Typst engine.
 
 On Linux, distribution packages of pandoc are often older than 3.1.3; take the `.deb` or tarball from [pandoc's releases](https://github.com/jgm/pandoc/releases) instead. typst comes from [its releases](https://github.com/typst/typst/releases) or `cargo install --locked typst-cli`. On Windows, `winget install JohnMacFarlane.Pandoc` and `winget install Typst.Typst`.
 

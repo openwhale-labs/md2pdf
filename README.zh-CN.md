@@ -25,10 +25,10 @@ md2pdf 是一个没有 Python 依赖的 Python 包,运行时调用 PATH 上的 `
 
 ```
 brew install pandoc typst
-uv tool install git+https://github.com/openwhale-labs/md2pdf
+uv tool install md2pdf-cjk
 ```
 
-用 `pipx install git+https://github.com/openwhale-labs/md2pdf` 也一样。Typst 引擎要求 pandoc 3.1.3 或更新。
+用 `pipx install md2pdf-cjk` 也一样;PyPI 上的包名是 [md2pdf-cjk](https://pypi.org/project/md2pdf-cjk/),命令名是 `md2pdf`。Typst 引擎要求 pandoc 3.1.3 或更新。
 
 Linux 发行版仓库里的 pandoc 常常比 3.1.3 旧,建议从 [pandoc 的 releases](https://github.com/jgm/pandoc/releases) 拿 `.deb` 或 tarball;typst 从[它的 releases](https://github.com/typst/typst/releases) 下载,或 `cargo install --locked typst-cli`。Windows 用 `winget install JohnMacFarlane.Pandoc` 和 `winget install Typst.Typst`。
 
